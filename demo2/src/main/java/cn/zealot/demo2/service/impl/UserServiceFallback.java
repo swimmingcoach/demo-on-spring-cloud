@@ -14,6 +14,6 @@ import org.springframework.stereotype.Component;
 public class UserServiceFallback implements UserService {
     @Override
     public User getUser() {
-        return new User(0, "请求超时");
+        return new User(0, "请求超时", "");
     }
 }
